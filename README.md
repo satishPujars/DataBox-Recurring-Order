@@ -1,12 +1,12 @@
-# DataBox-DIsk-Recurring-Order
+# DataBox-Recurring-Order
 
 This project will contain Timer Trigger Function which include C# script, json files(Configuration files). This function will execute automatically depending on schedule time mentioned.
 
-When the function is triggered first then it creates job order for DataBoxDisk.
+When the function is triggered first then it creates job order for DataBox.
 
 This function is used for Recurring order Purpose that is once you complete this uploading function in your portal and sets schedule for function. Then this function will runs on schedule.
 
-<ul><b><u>For Example</u></b>: If your requirement is you need to order DataBoxDisk of 35TB every week on Monday and you need only for 5 schedule that is after 5 Monday's you don't want to order.
+<ul><b><u>For Example</u></b>: If your requirement is you need to order DataBox of 35TB every week on Monday and you need only for 5 schedule that is after 5 Monday's you don't want to order.
 		<li> First you need to specify in schedule option - click on created function select integrate option you will get  Schedule option on Refer this link specify expression (https://en.wikipedia.org/wiki/Cron#CRON_expression).</li>
 		<li> Second thing is after fifth Monday you should stop this function so that new orders were not create-- To do this click on your function name on right side there is option stop click on that.</li></ul>
 
@@ -23,7 +23,8 @@ The `TimerTrigger` makes it incredibly easy to have your functions executed on a
 
 For a `TimerTrigger` to work, you provide a schedule in the form of a [CRON expression](https://en.wikipedia.org/wiki/Cron#CRON_expression)(See the link for full details). A CRON expression is a string with 6 separate expressions which represent a given schedule via patterns. The pattern we use to represent every 5 minutes is `0 */5 * * * *`. This, in plain text, means: "When seconds is equal to 0, minutes is divisible by 5, for any hour, day of the month, month, day of the week, or year".
 
-<h2><b><u> Steps To Implement DataBox-DIsk-Recurring-Order</u></b></h2>
+<h2><b><u> Steps To Implement 
+	-DIsk-Recurring-Order</u></b></h2>
 
  I. Steps to create azure function follow the below link
  
